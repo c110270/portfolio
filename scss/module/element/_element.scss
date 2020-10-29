@@ -1,0 +1,91 @@
+/*======================================
+heading
+======================================*/
+.el_lv2Heading{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+/*======================================
+btn
+======================================*/
+.el_btn{
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid $color-border-main;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+
+  &:hover{
+    background-color: $color-bg-sub;
+    color: $color-font-white;
+    opacity: 0.9;
+  }
+}
+
+.el_btn_rightAllow{
+  position: relative;
+  width: 120px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    transform: rotate(45deg);
+    border-top: 2px solid $color-border-main;
+    border-right: 2px solid $color-border-main;
+    width: 8px;
+    height: 8px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  &:hover::after{
+    border-color: $color-border-white;
+  }
+}
+
+.el_btn_portfolio{
+  position: relative;
+  width: 250px;
+  padding: 15px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 16px;
+    transform: rotate(45deg);
+    border-top: 2px solid $color-border-main;
+    border-right: 2px solid $color-border-main;
+    width: 8px;
+    height: 8px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  &:hover::after{
+    border-color: $color-border-white;
+  }
+
+}
+
+/*======================================
+mandatory
+======================================*/
+.el_mandatory{
+  display: inline-block;
+  position: relative;
+
+  &::after{
+    content: '＊';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    color: $color-accent;
+    font-size: 8px;
+  }
+}

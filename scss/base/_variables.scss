@@ -1,0 +1,54 @@
+/*======================================
+カラー
+======================================*/
+// カラー
+$color-accent: rgb(250, 6, 6);
+
+//フォント
+$color-font-main: #333333;
+$color-font-white: #fff;
+
+// ボーダー
+$color-border-main: #333333;
+$color-border-white: #fff;
+
+// バックグラウンド
+$color-bg-main: #fff;
+$color-bg-sub: #333333;
+
+/*==================================
+フォント
+===================================*/
+//サイズ
+$fz-main: 16px;
+
+//ファミリー
+$font-family-main: 
+  'Cormorant',
+  "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  "Meiryo",
+  serif;
+
+/*==================================
+レイアウト幅
+===================================*/
+$ly-width-canvas: 1280px;
+
+/*==================================
+余白
+===================================*/
+$padding-pc: 80px;
+$padding-tab: 40px;
+$padding-sp: 16px;
+
+/*==================================
+ブレイクポイント
+===================================*/
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: #{$ly-width-canvas - $padding-pc * 2 - 1px})",
+  "pc": "screen and (min-width: #{$ly-width-canvas - $padding-pc * 2})",
+);

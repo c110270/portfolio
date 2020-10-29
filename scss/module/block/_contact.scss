@@ -1,0 +1,103 @@
+.bl_contact{
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+// インプット初期化
+input[type="text"],
+input[type="email"],
+textarea
+{
+	/*inputタグに対する既定の装飾を解除するプロパティ(appearance: none)*/
+		-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px 0px $color-border-main;
+    border-radius: 0;
+    line-height: 1.5;
+  /*inheritは親要素を継承という意味*/
+		color: inherit;
+    font-family: inherit;
+    width: 100%;
+
+&:focus{
+    outline: none;
+	}
+  }
+
+  // 送信ボタン初期化
+  input[type="submit"] {
+    -webkit-appearance: none;
+    color: $color-font-main;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  
+  .submit-test:hover,
+  .submit-test:focus {
+    outline: none;
+  }
+  
+  // クリック時の点線を消去する(Firefoxでのみ出る現象)
+  .submit-test::-moz-foucus-inner {
+    border: none;
+    padding: 0;
+  }
+
+  label{
+    display: inline-block;
+    margin-top: 40px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+  input{
+    margin-top: 10px;
+
+    &:last-child{
+      margin-top: 40px;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    padding: 8px;
+  }
+
+  textarea{
+    resize: none;
+    margin-top: 10px;
+  }
+
+  input[type="submit"]{
+    display: block;
+    padding: 10px;
+    border: 1px solid $color-border-main;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+
+    &:hover{
+      background-color: $color-bg-sub;
+      color: $color-font-white;
+      opacity: 0.9;
+    }
+  }
+  

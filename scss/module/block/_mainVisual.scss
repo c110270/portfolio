@@ -1,0 +1,54 @@
+.bl_mainVisual{
+  display: flex;
+  width: 100%;
+  max-width: $ly-width-canvas;
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
+
+  @include _mq(tab){
+    padding-left: $padding-tab;
+    padding-right: $padding-tab;
+  }
+
+  @include _mq(sp){
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+
+  &_left{
+    width: 18.33%;
+    padding-top: 225px;
+  }
+
+  &_right{
+    width: 60%;
+    margin-left: auto;
+  }
+
+  &_center{
+    position: relative;
+    width: 20%;
+  }
+
+  &_title{
+    position: absolute;
+    top: 0px;
+    left: -90%;
+    width: 100%;
+    height: auto;
+    display: none;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include _mq(tab){
+      font-size: 56px;
+    }
+
+    @include _mq(sp){
+      top: 180px;
+      left: 50px;
+      font-size: 46px;
+    }
+  }
+}
