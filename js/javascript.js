@@ -37,7 +37,7 @@ $(function() {
 /*======================================
 mainVisualSlider
 ======================================*/
-var fade = new Swiper('.fade', {
+let fade = new Swiper('.fade', {
   loop: true,
   effect: 'fade',
   autoplay: {
@@ -81,7 +81,6 @@ jQuery('a[href^="#"]').click(function() {
   let id = jQuery(this).attr("href");
   let target = jQuery("#" == id ? "html" : id);
   let position = jQuery(target).offset().top;
-  // その分だけ移動すればヘッダーと被りません
   jQuery("html, body").animate(
     {
       scrollTop: position

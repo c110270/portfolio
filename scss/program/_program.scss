@@ -28,6 +28,7 @@ pageTop
 /*======================================
 drawer
 ======================================*/
+
 .js_drawer_icon{
 
   @include _mq(tab){
@@ -57,23 +58,25 @@ drawer
 }
 
 .js_drawer_toggle.open .js_drawer_icon:nth-child(1) {
-  top: 10px;
+  position: fixed;
+  top: 40px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   background: $color-bg-main;
  }
  
  .js_drawer_toggle.open .js_drawer_icon:nth-child(2) {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
  }
  
  .js_drawer_toggle.open .js_drawer_icon:nth-child(3) {
-  top: -10px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background: $color-bg-main;
+    position: fixed;
+    top: 40px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: $color-bg-main;
  }
 
 .js_drawer_layer.open{
