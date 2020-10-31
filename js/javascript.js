@@ -67,11 +67,10 @@ $(function(){
 fadeIn(mainVisualTitle)
 ======================================*/
 $(function(){
-  $(window).on("load", function() {
-    $('.bl_mainVisual_title').delay(0).fadeIn(2000);
-    });
+  $(document).ready(function(){
+    $('.bl_mainVisual_title').fadeIn(2000);
+  });
 });
-
 /*======================================
 smooth scroll
 ======================================*/
